@@ -1,0 +1,165 @@
+/* Desktop */
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  margin: 0px;
+  background-color: hsl(225, 100%, 94%);
+  font-size: 16px;
+}
+
+div {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.flex {
+  flex-direction: column;
+  align-content: space-between;
+  align-items: stretch;
+  width: 450px;
+  margin: 0px;
+  background-color: hsl(225, 100%, 98%);
+  padding-bottom: 20px;
+  border-radius: 0% 0% 20px 20px;
+}
+
+.hero {
+  margin-bottom: 30px;
+  background-color: #d6e1ff;
+  height: 220px;
+}
+
+.hero img {
+  border-radius: 20px 20px 0% 0%;
+}
+
+.order {
+  font-weight: 900;
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
+.order__details {
+  font-weight: 500;
+  font-size: 14px;
+  width: 250px;
+  margin: auto;
+  padding-top: 10px;
+  color: hsl(224, 23%, 55%);
+  background-color: hsl(225, 100%, 98%);
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: hsl(225, 100%, 94%);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.details__plan {
+  font-weight: 900;
+}
+
+.details__price {
+  color: hsl(224, 23%, 55%);
+}
+
+.details__change {
+  color: hsl(245, 75%, 52%);
+  align-self: center;
+  text-decoration: underline;
+}
+
+.details__change:hover {
+  cursor: pointer;
+  color: hsl(245, 96%, 68%);
+  text-decoration: none;
+}
+
+.button {
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+.button:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+.button--blue-theme {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  margin-bottom: 10px;
+}
+
+.button--blue-theme:hover {
+  background-color: hsl(245, 96%, 68%);
+  color: hsl(225, 100%, 98%);
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .flex {
+    width: 320px;
+  }
+  .details {
+    width: 250px;
+  }
+  .hero {
+      height: 156.45px;
+  }
+  .hero img {
+    border-radius: 8px 8px 0% 0%;
+    width:320px;
+  }
+  .button{
+    width: 250px;
+  }
+}
+
+/* 
+Layout:
+Mobile: 375px {Take care of it later} TO DO
+Desktop: 1440px {For bigger layouts I need to stretch background desktop} TO DO
+
+Colors:
+Primary
+Pale blue: hsl(225, 100%, 94%) {Bottom Background}
+Bright blue: hsl(245, 75%, 52%) {Button Blue Theme}
+
+Neutral
+Very pale blue: hsl(225, 100%, 98%)
+Desaturated blue: hsl(224, 23%, 55%)
+Dark blue: hsl(223, 47%, 23%)
+
+Typography:
+Body Copy
+Font size (paragraph): 16px
+
+Font
+Family: Red Hat Display https://fonts.google.com/specimen/Red+Hat+Display
+Weights: 500, 700, 900
+*/
